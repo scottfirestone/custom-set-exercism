@@ -31,4 +31,22 @@ describe('CustomSet', function() {
     var actual2 = new CustomSet([1, 2, 3]).difference(new CustomSet([4]));
     expect(actual2.eql(expected2)).toBe(true);
   });
+  
+  xit('can test disjoint', function() {
+    var actual = new CustomSet([1, 2]).disjoint(new CustomSet([3, 4]));
+    expect(actual).toBe(true);
+    var actual2 = new CustomSet([1, 2]).disjoint(new CustomSet([2, 3]));
+    expect(actual2).toBe(false);
+    var actual3 = new CustomSet().disjoint(new CustomSet());
+    expect(actual3).toBe(true);
+  });
+
+  xit('can be emptied', function() {
+    var actual = new CustomSet([1, 2]).empty();
+    var expected = new CustomSet();
+    expect(actual.eql(expected)).toBe(true);
+    var actual2 = new CustomSet().empty();
+    var expected2 = new CustomSet();
+    expect(actual2.eql(expected2)).toBe(true);
+  });
 });
