@@ -1,0 +1,23 @@
+{
+  "name": "custom-set-exercism",
+  "version": "1.0.0",
+  "description": "_Source: [exercism.io](http://exercism.io/)_",
+  "main": "custom-set.spec.js",
+  "dependencies": {
+    "jasmine-node": "^1.14.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottfirestone/custom-set-exercism.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottfirestone/custom-set-exercism/issues"
+  },
+  "homepage": "https://github.com/scottfirestone/custom-set-exercism#readme"
+}
